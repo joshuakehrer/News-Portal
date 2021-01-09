@@ -1,7 +1,25 @@
 // Link Handling
 
-img {
-  display: block;
+.image {
+  position: relative;
   width: 100%;
   max-width: 100%;
 }
+
+img {
+  // display: block;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 3px 3px 0px 0px;
+}
+
+.tag {
+  color: white;
+  position: absolute;
+  top: 4px;
+  left: 16px;
+  background-color: #6773DD;
+  padding: 12px;
+  border-radius: 2px;
+}
+

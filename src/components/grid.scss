@@ -26,6 +26,9 @@ div[class^="card-"] {
 
 .column-12 {
   grid-column: span 12;
+  @include media(m) {
+    grid-column: span 12;
+  }
 }
 
 .column-1 {
