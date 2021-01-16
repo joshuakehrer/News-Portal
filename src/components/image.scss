@@ -13,6 +13,10 @@ img {
   border-radius: 3px 3px 0px 0px;
 }
 
+img:hover{
+  cursor: pointer;
+}
+
 .tag {
   color: white;
   position: absolute;
