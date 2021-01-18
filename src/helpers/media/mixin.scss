@@ -9,11 +9,17 @@
 // }
 
 $breakpoints--default: 0;
-$breakpoints--m: 700px;
+$breakpoints--s: 500px;
+$breakpoints--m: 650px;
 $breakpoints--l: 1024px;
 
 @mixin media($point) {
-  @if $point == m {
+
+  @if $point == s {
+    @media (min-width: $breakpoints--s) {
+      @content;
+    }
+  }@if $point == m {
     @media (min-width: $breakpoints--m) {
       @content;
     }

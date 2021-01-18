@@ -3,15 +3,18 @@
   position: relative;
   width: 100%;
   max-width: 100%;
-  min-height: 122px;
+  min-height: 100px;
+
+  @include media(s) {
+    min-height: 122px;
+  }
+
   background-color: rgb(243, 243, 243);
   padding: 8px 16px 16px 16px;
   margin-top: 8px;
-  // border-style: solid;
-  // border-width: 1px;
-  // border-color: rgb(223, 223, 223);
   border-radius: 3px;
 }
+
 .teaser-small:hover {
   background-color: rgb(234, 234, 255);
   cursor: pointer;
@@ -24,11 +27,9 @@
   min-height: 178px;
   background-color: rgb(243, 243, 243);
   padding: 8px 16px 16px 16px;
-  // border-style: solid;
-  // border-width: 1px;
-  // border-color: rgb(223, 223, 223);
   border-radius: 0px 0px 3px 3px;
 }
+
 .teaser-big:hover {
   background-color: rgb(234, 234, 255);
   cursor: pointer;
@@ -38,15 +39,22 @@
   position: relative;
   width: 100%;
   max-width: 100%;
-  min-height: 218px;
+  min-height: 140px;
+
+  @include media(s) {
+    min-height: 180px;
+  }
+  @include media(m) {
+    min-height: 218px;
+  }
+
   background-color: rgb(243, 243, 243);
   padding: 8px 16px 16px 16px;
   margin-right: 8px;
-  // border-style: solid;
-  // border-width: 1px;
-  // border-color: rgb(223, 223, 223);
   border-radius: 0px 0px 3px 3px;
+
 }
+
 .teaser-medium:hover {
   background-color: rgb(234, 234, 255);
   cursor: pointer;
@@ -56,19 +64,25 @@
   position: relative;
   width: 100%;
   max-width: 100%;
-  min-height: 218px;
+  min-height: 140px;
+
+  @include media(s) {
+    min-height: 180px;
+  }
+  @include media(m) {
+    min-height: 218px;
+  }
+
   background-color: rgb(243, 243, 243);
   padding: 8px 16px 16px 16px;
   margin-right: 8px;
-  // border-style: solid;
-  // border-width: 1px;
-  // border-color: rgb(223, 223, 223);
   border-radius: 0px 0px 3px 3px;
 
   border-bottom-style: solid;
   border-bottom-width: 3px;
   border-bottom-color: rgb(157, 155, 255);
 }
+
 .teaser-kolumne:hover {
   background-color: rgb(234, 234, 255);
   cursor: pointer;
@@ -98,4 +112,19 @@
 
 .teaser-werbung img {
   border-radius: 0px;
+}
+
+.infoline {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  left: 16px;
+  bottom: 6px;
+}
+
+.icon {
+  height: 14px;
+  width: 14px;
 }

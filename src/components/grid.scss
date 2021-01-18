@@ -69,10 +69,21 @@ div[class^="card-"] {
 
 .column-4 {
   grid-column: span 12;
+  @include media(s) {
+    grid-column: span 6;
+  }
   @include media(m) {
     grid-column: span 4;
   }
+  margin-top: 16px;
+  // @include media(s) {
+  //   margin-top: 16px;
+  // }
+  @include media(m) {
+    margin-top: 0px;
+  }
 }
+
 .column-8 {
   grid-column: span 12;
   @include media(m) {
