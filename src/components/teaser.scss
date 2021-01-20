@@ -3,9 +3,15 @@
   position: relative;
   width: 100%;
   max-width: 100%;
-  min-height: 100px;
+  min-height: 130px;
 
   @include media(s) {
+    min-height: 150px;
+  }
+  @include media(m) {
+    min-height: 110px;
+  }
+  @include media(l) {
     min-height: 122px;
   }
 
@@ -23,11 +29,19 @@
 .teaser-big {
   position: relative;
   width: 100%;
-  max-width: 100%;
-  min-height: 178px;
+  max-width: 140%;
+  min-height: 250px;
   background-color: rgb(243, 243, 243);
   padding: 8px 16px 16px 16px;
   border-radius: 0px 0px 3px 3px;
+
+  @include media(s) {
+    min-height: 210px;
+  }
+
+  @include media(m) {
+    min-height: 178px;
+  }
 }
 
 .teaser-big:hover {
@@ -39,10 +53,10 @@
   position: relative;
   width: 100%;
   max-width: 100%;
-  min-height: 140px;
+  min-height: 200px;
 
   @include media(s) {
-    min-height: 180px;
+    min-height: 260px;
   }
   @include media(m) {
     min-height: 218px;
@@ -64,10 +78,10 @@
   position: relative;
   width: 100%;
   max-width: 100%;
-  min-height: 140px;
+  min-height: 200px;
 
   @include media(s) {
-    min-height: 180px;
+    min-height: 260px;
   }
   @include media(m) {
     min-height: 218px;

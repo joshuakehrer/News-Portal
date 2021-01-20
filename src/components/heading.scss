@@ -21,8 +21,13 @@ p {
   font-family: 'Roboto', sans-serif;
   color: #1F1F1F;
   font-weight: 400;
-  font-size: 0.7rem;
-  line-height: 1.05rem;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+
+  @include media(m) {
+    font-size: 0.7rem;
+    line-height: 1.05rem;
+  }
 }
 
 h1 {
@@ -59,26 +64,43 @@ h2 {
 h3 {
   color: #1F1F1F;
   font-weight: 700;
-  font-size: 1.1rem;
-  line-height: 1.25rem;
+  font-size: 1.35rem;
+  line-height: 1.5rem;
   margin-top: 0em;
   margin-bottom: .4em;
+
+  @include media(m) {
+    font-size: 1.1rem;
+    line-height: 1.25rem;
+  }
+  
 }
 
 h4 {
   font-weight: 700;
-  font-size: 0.55rem;
-  line-height: 0.1rem;
+  font-size: 0.8rem;
+  line-height: 0.2rem;
   color: rgb(108, 107, 155);
   margin-top: 1.1em;
   margin-bottom: 1.3em;
+
+  @include media(m) {
+    font-size: 0.55rem;
+    line-height: 0.1rem;
+  }
+  
 }
 
 h5 {
   color: #1F1F1F;
   font-weight: 700;
-  // font-size: 0.75rem;
-  line-height: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.2rem;
+
+  @include media(m) {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
 }
 
 h6 {
